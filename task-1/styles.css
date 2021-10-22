@@ -4,183 +4,148 @@
     font-family: "Poppins", sans-serif;
 }
 
-.dNone {
-    display: none;
-}
-
-/*@media all  and (max-width: 560px) {*/
-.wrapper {
-    height: 100%; /*chnge ???????????????????? */
-    background: no-repeat url("./icons/bg.jpg");
-    background-size: 100%;
-
-}
-
-.container {
-    display: flex;
-    flex-direction: column;
-}
-
-.sign-bar {
-    /*display: flex;*/
-    /*flex-direction: column;*/
-    /*justify-content: center;*/
-    /*align-items: center;*/
-    width: 100%;
-    /*height: calc(100% - 72px);*/
-    /*height: 1024px;*/
-    top: 72px;
-    bottom: 0;
-    right: 0;
-    overflow: hidden;
-    position: absolute;
-    background-color: #F9FAFF;
-    border-radius: 24px 24px 0px 0px;
-
-}
-
-.sign-bar__form {
-    display: flex;
-    flex-direction: column;
-    /*justify-content: center;*/
-    /*align-items: center;*/
-    height: calc(100% - 72px);
-    gap: 24px 40px;
-    margin: 0 32px;
-}
-
-/*.sign-form__label {*/
-/*    font-weight: 600;*/
-/*    line-height: 120%;*/
-/*    color: #202225;*/
-/*    font-size: 24px;*/
-/*    margin-bottom: 3px;*/
-/*}*/
-
-.sign-bar__input {
-    border: 1px solid #DCE0EC;
-    box-sizing: border-box;
-    box-shadow: 0px 4px 32px rgb(218 228 255 / 16%);
-    border-radius: 8px;
-    font-size: 15px;
-    line-height: 138%;
-    width: 100%;
-    /*padding: 9px calc(7.2% + 28px);*/
-    padding: 9px 47px;
-}
-
-.sign-bar__input:hover,
-.sign-bar__input:focus {
-    outline: none;
-    border-color: #7297FF;
-    box-shadow: 0px 4px 32px rgba(218, 228, 255, 0.24);
-}
-
-.signBar input:focus, input:hover {
-    outline: none;
-    border-color: #7297FF;
-    box-shadow: 0px 4px 32px rgba(218, 228, 255, 0.24);
-}
-
-.sign-form__input_name-icon {
-    background: url("./icons/user-icon.svg") no-repeat;
-}
-
-.sign-form__input_email-icon {
-    background: url("./icons/email-icon.svg") no-repeat;
-}
-
-.sign-form__input_password-icon {
-    background: url("./icons/lock-icon.svg") no-repeat;
-    width: 100%;
-}
-
-.sign-form__input_confirm-password-icon {
-    /*position: relative;*/
-    background: url("./icons/check-icon.svg") no-repeat;
-    width: 100%;
-}
-.sign-form__input_icon-position {
-    background-position-y: center;
-    background-position-x: 18px;
-}
-
-.sign-form__name {
-    font-size: 20px;
-    font-weight: 600;
-    line-height: 120%;
-    /*margin-bottom: 3px;*/
-    /*margin-top: 32px;*/
-    margin: 36px 0 4px 0px;
-}
-
-.sign-bar__have-account {
-    font-size: 15px;
-    line-height: 140%;
-    /*margin-top: auto;*/
-    /*margin-left: 32px;*/
-    /*margin-bottom: 47px;*/
-    position: absolute;
-    bottom: 47px;
-}
-
-.sign-bar__have-account_span {
-    display: block;
-    margin-left: 0;
-    font-weight: 600;
-    font-size: 15px;
-    line-height: 130%;
-    margin-top: 5px;
-    align-items: center;
-    text-decoration-line: underline;
-    color: #7297FF;
-}
-
-.sign-button {
-    font-weight: 600;
-    color: #FFFFFF;
-    padding: 14.5px;
-    /*margin: 24px auto 15px 24px;*/
-}
-
-.sign-button_style {
-    font-weight: 600;
-    font-size: 15px;
-    line-height: 130%;
-    margin: 9px auto 0 0;
-    color: white;
-    /*background-color: #7297FF;*/
-    background: url("./icons/angle-right-b-icon.svg") no-repeat center right 22.29px #7297FF;
-    border: none;
-    border-radius: 8px;
-    padding: 14px 48px 13px 16px;
-
-}
-
-.password-block {
-    position: relative;
-    /*cursor: pointer;*/
-}
-
-.password-block__eye-button {
-    border: none;
-    cursor: pointer;
-    position: absolute;
-    background: url("./icons/eye-slash-icon.svg") no-repeat center;
-    right: 7.2%;
-    width: 20px;
-    height: 100%;
-}
-
-/*}*/
-
-@media (min-width: 768px) {
+@media all {
     .wrapper {
-        height: 100vh; /*chnge ???????????????????? */
-        height: 1024px; /*chnge ???????????????????? */
-        background: url("./icons/bg.jpg") no-repeat;
-        /*background-size: 100%;*/
+        height: 100%;
+        background: no-repeat url("./icons/bg.jpg");
+        background-size: 100%;
+        color: #A1ABC9;
+    }
 
+    .container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .sign-bar {
+        width: 100%;
+        top: 72px;
+        position: absolute;
+        background-color: #F9FAFF;
+        border-radius: 24px 24px 0px 0px;
+
+    }
+
+    .sign-bar__container {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: calc(100vh - 72px);
+        margin: 0 32px;
+
+    }
+
+    .sign-bar__form {
+        display: flex;
+        flex-direction: column;
+        gap: 24px 40px;
+    }
+
+    .sign-bar__input {
+        border: 1px solid #DCE0EC;
+        box-sizing: border-box;
+        box-shadow: 0px 4px 32px rgb(218 228 255 / 16%);
+        border-radius: 8px;
+        font-size: 15px;
+        line-height: 138%;
+        width: 100%;
+        padding: 9px 47px;
+    }
+
+    .sign-bar_back-link {
+        text-decoration-line: none;
+        margin-right: 24px;
+    }
+
+    .sign-form__input_name-icon {
+        background: url("./icons/user-icon.svg") no-repeat;
+    }
+
+    .sign-form__input_email-icon {
+        background: url("./icons/email-icon.svg") no-repeat;
+    }
+
+    .sign-form__input_password-icon {
+        background: url("./icons/lock-icon.svg") no-repeat;
+        width: 100%;
+    }
+
+    .sign-form__input_confirm-password-icon {
+        background: url("./icons/check-icon.svg") no-repeat;
+        width: 100%;
+    }
+
+    .sign-form__input_icon-position {
+        background-position-y: center;
+        background-position-x: 18px;
+    }
+
+    .sign-form__name {
+        color: #202225;
+        font-size: 20px;
+        font-weight: 600;
+        line-height: 120%;
+        margin: 36px 0 4px 0px;
+    }
+
+    .password-block {
+        position: relative;
+    }
+
+    .password-block__eye-button {
+        border: none;
+        cursor: pointer;
+        position: absolute;
+        background: url("./icons/eye-slash-icon.svg") no-repeat center;
+        right: 7.2%;
+        width: 20px;
+        height: 100%;
+    }
+
+    .sign-button {
+        font-weight: 600;
+        color: #FFFFFF;
+        padding: 14.5px;
+    }
+
+    .sign-button_style {
+        font-weight: 600;
+        font-size: 15px;
+        line-height: 130%;
+        margin: 9px auto 0 0;
+        color: white;
+        background: url("./icons/angle-right-b-icon.svg") no-repeat center right 22.29px #7297FF;
+        border: none;
+        border-radius: 8px;
+        padding: 14px 48px 13px 16px;
+
+    }
+
+    .sign-bar__have-account {
+        font-size: 15px;
+        line-height: 140%;
+        margin-top: auto;
+        margin-bottom: 47px;
+        color: #A1ABC9;
+    }
+
+    .sign-bar__have-account_link {
+        display: block;
+        margin-left: 0;
+        font-weight: 600;
+        font-size: 15px;
+        line-height: 130%;
+        margin-top: 5px;
+        align-items: center;
+        text-decoration-line: underline;
+        color: #7297FF;
+    }
+}
+
+@media only screen and (min-width: 700px) {
+    .wrapper {
+        height: 100vh;
+        background: url("./icons/bg.jpg") repeat;
     }
 
     .sign-bar {
@@ -189,25 +154,23 @@
         width: 560px;
         right: 0;
         top: 0;
-        height: 100%;
-        /*justify-content: center;*/
-        /*align-items: center;*/
+    }
 
+    .sign-bar__container {
+        margin: 0 96px;
+        height: 100vh;
     }
 
     .sign-bar__form {
         justify-content: center;
-        /*align-items: center;*/
-        margin: 0 96px;
         gap: 39px 40px;
     }
+
     .sign-form__name {
         font-size: 24px;
         line-height: 110%;
         font-weight: 600;
         margin: 98px 0 4px 0px;
-        /*color: #202225;*/
-        /*margin-bottom: 3px;*/
     }
 
     .sign-bar__input {
@@ -225,19 +188,24 @@
         margin-top: 24px;
         padding: 17px 57px 17px 24px;
         background: url("./icons/angle-right-b-icon.svg") no-repeat center right 31.29px #7297FF;
-
     }
+
     .sign-bar__have-account {
-        margin-left: 96px;
         bottom: 42px;
     }
-    .sign-bar__have-account_span {
+
+    .sign-bar__have-account_link {
         display: initial;
         margin-left: 8px;
     }
+}
 
-    .sign-bar__form {
-
+@media only screen  and (min-width: 1224px) {
+    .sign-form__name {
+        margin: 170px 0 4px 0px;
     }
 
+    .sign-bar__have-account {
+        margin-bottom: 83px;
+    }
 }
