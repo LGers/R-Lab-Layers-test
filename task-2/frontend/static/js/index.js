@@ -21,6 +21,7 @@ const router = async () => {
         {path: "/restore-password", view: RestorePassword},
         {path: "/restore-password-sent", view: RestorePasswordSent},
         {path: "/page404", view: Page404},
+        {path: "/test", view: ()=>console.log("test page")}
     ]
 
     //Test each route for potential match

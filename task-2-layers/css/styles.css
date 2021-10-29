@@ -11,7 +11,7 @@ body {
 @media all {
   .wrapper {
     position: relative;
-    height: 100vh;
+    /*height: 100vh;*/
     display: flex;
     flex-direction: column;
     background: #E4EBFF;
