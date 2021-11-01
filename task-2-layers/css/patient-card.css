@@ -5,9 +5,12 @@
     flex-direction: row;
     flex-wrap: wrap;
     gap: 24px 20px;
-    padding-top: 20px;
+    height: 100%;
+    overflow-y: scroll;
+    margin-bottom: 20px;
   }
   .patient-card {
+    width: 100%;
     max-width: 640px;
     display: flex;
     flex-direction: column;
@@ -57,7 +60,7 @@
     box-sizing: border-box;
     overflow: hidden;
   }
-  .patient-info__avatar {
+  .patient-info__avatar img {
     padding-top: 5px;
     width: 48px;
     height: 48px;

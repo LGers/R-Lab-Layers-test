@@ -9,19 +9,27 @@ body {
   font-weight: normal;
   color: #202225;
 }
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+::-webkit-scrollbar-track {
+  background: rgba(236, 220, 222, 0.3);
+  border-radius: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(220, 224, 236, 0.5);
+  border-radius: 8px;
+}
 
 @media all {
   .wrapper {
-
     position: relative;
     height: 100vh;
-    display: flex;
-    flex-direction: column;
-    //justify-content: flex-start;
-    //align-items: stretch;
-
+    margin: auto;
+    display: block;
     background: #E4EBFF;
-    //background: blueviolet; //delete it
 
 
     &__header, &__footer {
@@ -29,7 +37,6 @@ body {
     }
 
     &__content {
-      //padding: 16px 24px 16px 24px;
       padding-left: 24px;
       padding-right: 24px;
     }
@@ -38,6 +45,14 @@ body {
       display: none;
     }
 
+  }
+  .container{
+    height: 100vh;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1920px;
+    display: flex;
+    flex-direction: column;
   }
 
   .header {
@@ -109,6 +124,8 @@ body {
   }
 
   .content {
+    overflow: hidden;
+    height: 100%;
     background: #F9FAFF;
     box-shadow: 0px 4px 32px rgba(218, 228, 255, 0.32);
     border-radius: 16px 16px 0px 0px;
@@ -132,10 +149,6 @@ body {
         margin-bottom: 32px;
       }
     }
-
-    //&__footer {
-    //  flex-grow: 1;
-    //}
   }
 
   .buttons {
@@ -203,6 +216,7 @@ body {
   }
 
   .content-title {
+    padding-bottom: 16px;
     font-weight: 600;
     font-size: 20px;
     line-height: 120%;
@@ -249,6 +263,7 @@ body {
       background-color: #fff;
     }
   }
+
 
 }
 
